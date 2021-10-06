@@ -1,0 +1,28 @@
+//maps
+$maps: (
+   facebook: #41579A,
+   IG: linear-gradient(to top right, #FCDE30, #E9712A, #D2313B, #AE4198, #7540A1, #5443A8),
+   tiktok: black,
+);
+
+.container-footer {
+    footer {
+        .redes-footer {
+            .fa-facebook-f {
+                &:hover {
+                    background: map-get($maps, facebook);
+                }
+            }
+            .fa-instagram {
+                &:hover {
+                    background: map-get($maps, IG);
+                }
+            }
+            .fa-tiktok {
+                &:hover {
+                    background: map-get($maps, tiktok);
+                }
+            }
+        }
+    }
+}

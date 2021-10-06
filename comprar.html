@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Allison&family=Crimson+Text&family=IBM+Plex+Sans+Thai&family=Kaisei+HarunoUmi&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <!--CSS-->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>By More</title>
+</head>
+
+<body>
+  <!--Header con navbar-->
+  <header class="header position-sticky top-0">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">By More</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex" onsubmit="return false;">
+            <input class="form-control me-2" type="search" id="buscar" placeholder="Busca lo que necesites"
+              aria-label="Search">
+            <button class="btn btn-outline-light bg-success" id="btnBuscar">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col">
+          <h2 class="d-flex justify-content-center mb-3">Realizar Compra</h2>
+          <form id="procesar-pago" action="#">
+            <div class="form-group row">
+              <label for="cliente" class="col-12 col-md-2 col-form-label h2">Cliente :</label>
+              <div class="col-12 col-md-10">
+                <input type="text" class="form-control" id="cliente" placeholder="Ingresa nombre cliente" required>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="email" class="col-12 col-md-2 col-form-label h2">Correo :</label>
+              <div class="col-12 col-md-10">
+                <input type="email" class="form-control" id="correo" placeholder="Ingresa tu correo" required>
+              </div>
+            </div>
+
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Item</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Agregar</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody id="items-comprar"></tbody>
+            <tfoot>
+              <tr id="footer-comprar">
+                <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+              </tr>
+            </tfoot>
+            </table>
+
+            <div class="row justify-content-center" id="loaders">
+              <img id="cargando" src="images/cargando.gif" width="220">
+            </div>
+
+            <div class="row justify-content-between">
+              <div class="col-md-4 mb-2">
+                <a href="index.html" class="btn btn-info btn-block">Seguir comprando</a>
+              </div>
+              <div class="col-xs-12 col-md-4">
+                <a href="" class="btn btn-success btn-block" id="procesar-compra">Realizar compra</a>
+              </div>
+            </div>
+          </form>
+
+
+        </div>
+
+
+      </div>
+
+    </div>
+  </main>
+
+
+  <template id="template-card">
+    <div class="col-12 mb-2 col-md-4">
+      <div class="card" style="width: 12rem;">
+        <img src="" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <h6 class="hide"></h6>
+          <p>Precio:<span class="precio"></span></p>
+          <button class="btn btn-primary button">Añadir a Carrito</button>
+        </div>
+      </div>
+    </div>
+  </template>
+
+
+  </div>
+  <!-- Footer links a redes sociales-->
+  <div class="container-footer pt-5">
+    <footer>
+      <div class="logo-footer"><a href="index.html"><img src="images/ByMore.png" alt="logo by more"></a></div>
+      <div class="redes-footer">
+        <a href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook-f icon-redes-footer"></i></a>
+        <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i
+            class="fab fa-instagram icon-redes-footer"></i></a>
+        <a href="https://www.tiktok.com/es" target="_blank"><i class="fab fa-tiktok icon-redes-footer"></i></a>
+      </div>
+      <div></div>
+      <hr>
+      <h4 class="copyright">© 2021 By More - Todos los derechos reservados.</h4>
+    </footer>
+  </div>
+
+  <!-- Fin footer links a redes sociales-->
+  <!--JS-->
+  <!-- ICON -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/ee3fc12224.js" crossorigin="anonymous"></script>
+  <script src="js/productos.js"></script>
+  <script src="js/ajax.js"></script>
+  <script src="js/carrito.js"></script>
+  <script src="js/localStore.js"></script>
+  <script src="js/filtrar.js"></script>
+  <script src="js/buscar.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>

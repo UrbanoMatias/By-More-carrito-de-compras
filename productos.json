@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "img": "images/camisablanca.jpeg",
+        "prenda": "Camisa blanca clasica",
+        "precio": 900,
+        "tipo": "Arriba"
+    },
+    {
+        "id": 2,
+        "img": "images/remeras-varias.jpeg",
+        "prenda": "Remeras flower power",
+        "precio": 500,
+        "tipo": "Arriba"
+    },
+    {
+        "id": 3,
+        "img": "images/buzo.jpeg",
+        "prenda": "Buzo batic",
+        "precio": 950,
+        "tipo": "Arriba"
+    },
+    {
+        "id": 4,
+        "img": "images/camperas.jpeg",
+        "prenda": "Camperas cordero",
+        "precio": 1100,
+        "tipo": "Arriba"
+    },
+    {
+        "id": 5,
+        "img": "images/lenceria-carmesi.jpeg",
+        "prenda": "Conjunto intimo",
+        "precio": 750,
+        "tipo": "Lenceria"
+    },
+    {
+        "id": 6,
+        "img": "images/lenceria-varias.jpeg",
+        "prenda": "pack lenceria",
+        "precio": 1200,
+        "tipo": "Lenceria"
+    },
+    {
+        "id": 7,
+        "img": "images/calvin-klein.jpeg",
+        "prenda": "Calvin Klein por unidad",
+        "precio": 500,
+        "tipo": "Lenceria"
+    },
+    {
+        "id": 8,
+        "img": "images/bikinies.jpeg",
+        "prenda": "Tops colores varios",
+        "precio": 750,
+        "tipo": "Lenceria"
+    },
+    {
+        "id": 9,
+        "img": "images/jean-claro.jpeg",
+        "prenda": "Jean mom clasic",
+        "precio": 1300,
+        "tipo": "Abajo"
+    },
+    {
+        "id": 10,
+        "img": "images/shorts.jpeg",
+        "prenda": "shorts clasicos",
+        "precio": 900,
+        "tipo": "Abajo"
+    },
+    {
+        "id": 11,
+        "img": "images/jeans.jpeg",
+        "prenda": "Jeans mom rotura",
+        "precio": 1300,
+        "tipo": "Abajo"
+    },
+    {
+        "id": 12,
+        "img": "images/pantalones-blanco-marron-negro.jpeg",
+        "prenda": "Pantalones elephant",
+        "precio": 1200,
+        "tipo": "Abajo"
+    }
+]

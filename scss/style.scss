@@ -1,0 +1,12 @@
+// Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// Reset
+
+//Import
+@import "components/header.scss";
+@import "components/footer.scss";
+@import "base/maps.scss";
